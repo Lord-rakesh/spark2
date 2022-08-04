@@ -9,13 +9,13 @@
        update: yes
    - name: Starting the Spark-master Service
      shell:
-	   kubectl apply -f spark-master-service.yaml
+       kubectl apply -f spark-master-service.yaml
    - name: Starting the Spark-Master Deployment
      shell:
-	   kubectl apply -f spark-master-deployment.yaml
+       kubectl apply -f spark-master-deployment.yaml
    - name: Starting the Spark-Worker
      shell: 
        kubectl apply -f spark-worker-deployment.yaml
    - name: Starting the Ingress 
      shell:
-	   kubectl apply -f ingress.yaml
+       kubectl apply -f ingress.yaml
